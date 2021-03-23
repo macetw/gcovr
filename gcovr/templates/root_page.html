@@ -54,7 +54,7 @@
 {% endblock %}
 
 {% block content %}
-<table class="file-list">
+<table class="file-list coverage">
   <col/>
   <colgroup span="3"/>
   <colgroup span="2"/>
@@ -75,8 +75,10 @@
       {{row.filename}}
       {% endif %}
     </th>
-    <td>
-      <meter class="{{row.lines.class}}" min="0" max="100" value="{{row.lines.coverage}}" title="{{row.lines.coverage}}%">{{row.lines.coverage}}</meter>
+    <td style="min-width: 350px">
+      <span class="{{row.lines.class}}"
+             style="float: left; width:{{row.lines.coverage}}%"
+             min="0" max="100" value="{{row.lines.coverage}}" title="{{row.lines.coverage}}%">{{row.lines.coverage}}</span>
     </td>
     <td class="CoverValue line-coverage {{row.lines.class}}">{{row.lines.coverage}}%</td>
     <td class="CoverValue line-coverage {{row.lines.class}}">{{row.lines.exec}} / {{row.lines.total}}</td>

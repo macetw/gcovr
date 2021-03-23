@@ -99,6 +99,7 @@ table.coverage td.coverage-unknown
     background-color: var(--unknown_color) !important;
 }
 
+span.coverage-low,
 table.legend span.coverage-none,
 table.legend span.coverage-low,
 table.coverage td.coverage-none,
@@ -107,12 +108,14 @@ table.coverage td.coverage-low
     background-color: var(--low_color) !important;
 }
 
+span.coverage-medium,
 table.legend span.coverage-medium,
 table.coverage td.coverage-medium
 {
     background-color: var(--medium_color) !important;
 }
 
+span.coverage-high,
 table.legend span.coverage-high,
 table.coverage td.coverage-high
 {
